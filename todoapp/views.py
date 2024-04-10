@@ -20,7 +20,7 @@ def todo_list(request):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_R)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
  
 @api_view(["GET", "PATCH", "PUT", "DELETE"])   
 def todo_detail(request, pk):
