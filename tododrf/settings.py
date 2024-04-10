@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = BASE-DIR/'assets'
+STATIC_ROOT = BASE_DIR/'assets'
 
 STATICFILES_STORAGE = "whitenoise.storge.CompressedManifestStaticFilesStorage"
 
